@@ -250,7 +250,26 @@ body {
 .weather,
 .bottom-section {
   display: none;
-  opacity: 0;
+  -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 25em) {
