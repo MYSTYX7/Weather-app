@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      src="https://kit.fontawesome.com/23d5ac9c48.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <main class="weather-app">
+      <section class="top-section">
+        <form action="/" class="form">
+          <div class="form__group">
+            <input type="text" class="form__input" placeholder="City name" />
+
+            <button class="btn-search">
+              <ion-icon class="icon--search" name="search-outline"></ion-icon>
+            </button>
+
+            <small class="error">Please enter correct city name!</small>
+          </div>
+        </form>
+
+        <div class="weather">
+          <div class="img-box">
+            <img
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+              alt="weather img"
+              class="weather__img"
+            />
+          </div>
+
+          <div class="data-box">
+            <p class="weather__temperature">26°</p>
+            <div class="city-box">
+              <p class="weather__condition">Cloudy Skies</p>
+              <p class="weather__city">Bucharest, Romania</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bottom-section">
+        <div class="stats-box">
+          <div class="stats">
+            <i class="fa-solid fa-wind icon-weather"></i>
+            <p class="stats-text wind">2 mph</p>
+          </div>
+
+          <div class="stats">
+            <i class="fa-solid fa-droplet icon-weather"></i>
+            <p class="stats-text humidity">33%</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
