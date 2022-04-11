@@ -211,7 +211,18 @@ body {
 .weather,
 .bottom-section {
   display: none;
-  opacity: 0;
+  // opacity: 1;
+
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 // Media Queries

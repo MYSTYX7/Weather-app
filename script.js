@@ -47,7 +47,7 @@ const DisplayWeather = async function (city) {
 
     containerWeather.style.display = "block";
     containerBottomSection.style.display = "flex";
-    containerWeather.style.opacity = containerBottomSection.style.opacity = "1";
+    // containerWeather.style.opacity = containerBottomSection.style.opacity = "1";
   } catch (err) {
     console.error(err.message);
   }
